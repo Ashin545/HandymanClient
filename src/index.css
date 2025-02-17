@@ -1,0 +1,207 @@
+*{
+  font-family: "Poppins", serif;
+}
+
+h1{
+  font-weight: 800 !important;
+}
+h2{
+  font-size: 35px;
+  font-weight: 700 !important;
+}
+
+
+.hero {
+  background-image:url(./assets/plumbing-guy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  padding: 180px 0px !important;
+}
+
+
+.hero h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #f57c00; /* Orange color */
+}
+
+.hero-overlay {
+  position: relative;
+}
+
+.hero-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7; 
+}
+
+.hero-overlay > * {
+  position: relative;
+  z-index: 2;}
+
+.testimonial-card {
+  background-color: #fa823f !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p{
+  color: #fff;
+}
+
+.testimonial-card h5{
+  color: #fff;
+}
+
+.footer {
+  background-color: #343a40;
+}
+
+.footer a {
+  color: #ddd;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+
+
+.logo{
+  width: 80px;
+}
+
+
+.bg-orange{
+  background-color: #fa7713;
+}
+
+.bg-orange h2{
+  color: #fff;
+
+}
+
+.bg-orange p{
+  color: #fff;
+}
+
+.footer h5{
+  text-align: left;
+}
+.footer ul {
+  padding: 0px;
+}
+.footer ul li{
+  list-style-type: none;
+  text-align: left;
+  line-height: 25px;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+
+.footer ul li a:hover{
+  color: #f57c00;
+}
+
+.footer-logo{
+width: 50%;
+text-align: left;
+}
+
+.orange-clr{
+  color: #fa7713;
+}
+
+a.csnav-link{
+color: #000000;
+font-weight: 500;
+font-size: 17px;
+margin: 0px 10px;
+}
+
+a.csnav-link-orangebtn{
+  background-color: #fa7713;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.btn-orange{
+  background-color: #fa7713 !important;
+  color: #fff !important;
+  font-size: 17px;
+  border-radius: 25px !important;
+  padding: 10px 20px !important;
+  border: none;
+  text-decoration: none;
+}
+
+.click-through{
+  background-image: url(/src/assets/Click-through.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+}
+
+.click-through h2{
+  color: #fff;
+}
+
+.click-through h5{
+  color: #fff;
+}
+
+
+.What_We_Offer ul li{
+margin-top: 10px;
+}
+
+
+.Services-header{
+  background: url(./assets/handsome-plumber.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+
+}
+
+.Services-header h1{
+  color: #fff;
+}
+
+.Services-header h6{
+  color: #fff;
+}
+
+.section-padding{
+  padding: 70px 0px;
+}
+
+.service-img{
+  width: 60% 
+}
+
+
+@media (max-width: 768px) {
+
+  .service-img{
+    width: 100% 
+  }
+}
