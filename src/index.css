@@ -198,6 +198,15 @@ margin-top: 10px;
   width: 60% 
 }
 
+.section-padding ul{
+  margin-top: 20px;
+}
+
+.section-padding ul li{
+  margin-top: 20px;
+  list-style: none;
+}
+
 
 @media (max-width: 768px) {
 
