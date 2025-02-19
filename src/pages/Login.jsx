@@ -61,18 +61,23 @@ const Login = () => {
   const handleSubmitProvider = async (e) => {
     e.preventDefault();
     try {
+      console.log('Provider Data:', providerData); // Log the provider data being sent
+  
       const response = await fetch('http://localhost:5000/api/service-providers/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(providerData),
       });
-
+  
+      console.log('Response status:', response.status); // Log the response status
       const data = await response.json();
+      console.log('Response data:', data); // Log the response data
+  
       if (response.ok) {
         // Save JWT token and role in localStorage
         localStorage.setItem('token', data.token);
         localStorage.setItem('role', data.role);
-
+  
         // Redirect based on role
         if (data.role === 'admin') {
           navigate('/admin-dashboard');
@@ -96,7 +101,7 @@ const Login = () => {
         <Col md={6}>
           <Card>
             <Card.Body>
-              <Card.Title>Client Login</Card.Title>
+              <Card.Title>Client/admin Login</Card.Title>
               <Form onSubmit={handleSubmitClient}>
                 <Form.Group controlId="formClientEmail">
                   <Form.Label>Email</Form.Label>
@@ -121,7 +126,7 @@ const Login = () => {
                 </Form.Group>
 
                 <Button className='btn-orange btn mt-3 border-0' type="submit">
-                  Login as Client
+                  Login
                 </Button>
               </Form>
             </Card.Body>
