@@ -4,9 +4,9 @@ import electrician from '../assets/male-electrician-worker.jpg';
 import plumberpic from '../assets/handsome-plumber.jpg';
 import Cleaninglady from '../assets/cleaning-lady.jpg';
 import { Link } from 'react-router-dom';
-import review1 from '../assets/review1.JPG';
-import review2 from '../assets/review2.JPG';
-import review3 from '../assets/review3.JPG';
+import review1 from '../assets/Review1.JPG';
+import review2 from '../assets/Review2.JPG';
+import review3 from '../assets/Review3.JPG';
 
 
 const App = () => {
